@@ -1,0 +1,16 @@
+name: panAnalysis
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - bedtools
+  - blast
+  - nvc
+  - samtools
+  - bioconductor-biostrings
+  - r-ggplot2
+  - r-ggpubr
+  - r-reshape2
+  - r-stringr
+  - r-tidyverse
+  - r-viridis
