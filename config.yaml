@@ -1,0 +1,26 @@
+## configuration file to be used by snakemake
+## save as config.yaml
+
+## Input sequences - NEED TO BE PROVIDED IN INPUT
+GeneSequence: 
+  HMA5: Input/HMA5.fasta
+
+GenomeSequence: 
+  HMA5: Input/HMA5_Genome.fasta
+
+## Reference to align and call variants against
+ReferenceToAlignTo: Morex
+#### Parameters (can be adjusted, but those are working best as defaults for the start)
+
+## Blast filter parameters for the genome sequence
+#### Parameters for blast search
+PercentIdentity: 90
+PercentCoverage: 25
+
+#### Parameters for r script filtering:
+## Gene for genome filtering
+PercentIdentityFilter: 95
+PercentCoverageFilter: 70
+
+## Distance to extract up- and downstream of the genomic sequence (promoter region)
+DistanceUpDownstream: 100
